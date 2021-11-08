@@ -8,7 +8,7 @@ const port = process.env.PORT || 4042;
 app.use(bodyParser.urlencoded({extended: false }));
 app.use(bodyParser.json());
 
-route.use('/', require('./routes/users.js'));
+app.use('/', require('./routes/users.js'));
 
  
 app.listen(port, () => {
